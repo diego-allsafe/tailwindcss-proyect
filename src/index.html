@@ -6,27 +6,38 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="header" class="h-24 bg-blue-900 text-white font-sans">
+    <header id="header" class="h-24 bg-blue-900 text-white bebas">
       <div class="container mx-auto flex flex-row">
         <div id="logo" class="flex-1">
-          <h3>TAILWIND</h3>
+          <div
+            class="w-64 pt-0.5 pb-0.5 mt-4 ml-6 bg-gray-400 text-center tracking-wider cursor-pointer overflow-hidden transition duration-300 rounded-sm bg-azul-claro hover:text-black hover:bg-gray-200"
+          >
+            <span class="symbol block float-left text-3xl mt-1 ml-11"> S </span>
+            <h3
+              class="block float-right text-4xl mt-1.5 mr-16 transition duration-100"
+            >
+              TAILWIND
+            </h3>
+          </div>
         </div>
         <nav class="flex-1">
-          <ul>
-            <li>
-              <a href="#">Home</a>
+          <ul
+            class="flex flex-row h-20 items-center justify-end text-2xl text-center ml-6"
+          >
+            <li class="menu-item">
+              <a href="index.html" class="menu-item-a">Home</a>
             </li>
-            <li>
-              <a href="#">About Me</a>
+            <li class="menu-item">
+              <a href="../pages/aboutme.html" class="menu-item-a">About Me</a>
             </li>
-            <li>
-              <a href="#">Services</a>
+            <li class="menu-item">
+              <a href="../pages/services.html" class="menu-item-a">Services</a>
             </li>
-            <li>
-              <a href="#">News</a>
+            <li class="menu-item">
+              <a href="../pages/news.html" class="menu-item-a">News</a>
             </li>
-            <li>
-              <a href="#">Contact</a>
+            <li class="menu-item">
+              <a href="../pages/contact.html" class="menu-item-a">Contact</a>
             </li>
           </ul>
         </nav>
