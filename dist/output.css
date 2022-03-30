@@ -631,12 +631,33 @@ body {
   height: 5rem;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-64 {
   width: 16rem;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-low {
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
 }
 
 .cursor-pointer {
@@ -746,4 +767,67 @@ body {
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:animate-none {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes fromBellow {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.group:hover .group-hover\:animate-from-bellow {
+  -webkit-animation: fromBellow 500ms linear;
+          animation: fromBellow 500ms linear;
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    transform: translateX(200%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(200%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.group:hover .group-hover\:animate-from-right {
+  -webkit-animation: fromRight 300ms linear;
+          animation: fromRight 300ms linear;
 }
